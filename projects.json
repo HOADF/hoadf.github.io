@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Меню в стиле Telegram",
+    "url": "https://hoadf.github.io/telegram-style-menu/",
+    "repo": "https://github.com/hoadf/telegram-style-menu",
+    "preview": "images/telegram-menu.jpg",
+    "desc": "Мини-проект с меню «три точки» и всплывающими подсказками.",
+    "background": "#3b5998"
+  },
+  {
+    "name": "Портфолио фотографа",
+    "url": "https://hoadf.github.io/photographer-portfolio-demo/",
+    "repo": "https://github.com/hoadf/photographer-portfolio-demo",
+    "preview": "images/photographer-portfolio.jpg",
+    "desc": "Современное одностраничное портфолио для фотографа.",
+    "background": "#6a1b9a"
+  },
+  {
+    "name": "Бонусная программа",
+    "url": "https://hoadf.github.io/landing-page-for-the-bonus-program/",
+    "repo": "https://github.com/hoadf/landing-page-for-the-bonus-program",
+    "preview": "images/bonus-program.jpg",
+    "desc": "Лендинг с описанием бонусной системы.",
+    "background": "linear-gradient(135deg, #ff9800, #212121)"
+  }
+]
