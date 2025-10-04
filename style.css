@@ -2,10 +2,12 @@
 body {
   margin: 0;
   font-family: "Geologica", sans-serif;
-  background: #1b1b1b;
+  /* заменяем однотонный фон на плавный градиент */
+  background: linear-gradient(180deg, #0f1114 0%, #1a1d20 100%);
   color: #fff;
 }
 
+/* === Шапка === */
 header {
   text-align: center;
   padding: 40px 20px;
@@ -36,12 +38,16 @@ header p {
 
 /* === Карточка проекта === */
 .project {
+  /* заменяем старый фон на гибкий под фоновые изображения */
   background: #222;
   border-radius: 14px;
   padding: 25px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
 
 .project:hover {
