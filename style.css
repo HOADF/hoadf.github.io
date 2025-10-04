@@ -1,80 +1,102 @@
-/* Общие стили */
+/* === Общие стили === */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Geologica", sans-serif;
+  background: #1b1b1b;
   color: #fff;
-  scroll-behavior: smooth;
 }
 
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #111;
+  background: #0f0f0f;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 header h1 {
   margin: 0;
   font-size: 2rem;
+  color: #fff;
 }
 
 header p {
-  margin: 10px 0 0;
+  color: #aaa;
+  margin-top: 8px;
   font-size: 1rem;
-  opacity: 0.8;
 }
 
-section.project {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* === Контейнер проектов === */
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 50px 5%;
   justify-content: center;
-  align-items: center;
+}
+
+/* === Карточка проекта === */
+.project {
+  background: #222;
+  border-radius: 14px;
+  padding: 25px;
   text-align: center;
-  padding: 40px 20px;
-  transition: background 0.5s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .project img {
+  width: 100%;
   max-width: 400px;
-  width: 80%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
-}
-
-.project img:hover {
-  transform: scale(1.05);
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .project h2 {
-  margin: 10px 0;
-  font-size: 1.8rem;
+  margin: 10px 0 8px;
+  font-size: 1.4rem;
+  color: #fff;
 }
 
 .project p {
-  max-width: 600px;
-  margin: 0 auto 20px;
-  font-size: 1.1rem;
+  color: #ddd;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* === Кнопки === */
+.project .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .project a {
   display: inline-block;
-  margin: 5px 10px;
   padding: 10px 20px;
   border-radius: 25px;
-  background: rgba(255,255,255,0.2);
-  color: #fff;
   text-decoration: none;
-  transition: background 0.3s;
+  color: #fff;
+  font-weight: 600;
+  background: rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
 }
 
 .project a:hover {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.3);
 }
 
+/* === Подвал === */
 footer {
   text-align: center;
+  background: #0f0f0f;
   padding: 20px;
-  background: #111;
+  color: #777;
   font-size: 0.9rem;
 }
