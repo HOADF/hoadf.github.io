@@ -2,8 +2,7 @@
   {
     "title": "Меню в стиле Telegram",
     "description": "Мини-проект с анимацией меню и подсказками",
-    "preview": "images/telegram-menu.png",
-    "screenshot": "images/telegram-menu-full.jpg",
+    "preview": "images/telegram-menu.png",    
     "demo": "https://hoadf.github.io/telegram-style-menu/",
     "repo": "https://github.com/hoadf/telegram-style-menu",
     "colors": ["#0088cc", "#ffffff"]
@@ -11,8 +10,7 @@
   {
     "title": "Photographer Portfolio",
     "description": "Демо-портфолио для фотографа",
-    "preview": "images/portfolio-icon.png",
-    "screenshot": "images/portfolio-full.jpg",
+    "preview": "images/portfolio-icon.png",    
     "demo": "https://hoadf.github.io/photographer-portfolio-demo/",
     "repo": "https://github.com/hoadf/photographer-portfolio-demo",
     "colors": ["#222222", "#d4a373"]
