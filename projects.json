@@ -1,26 +1,29 @@
 [
   {
     "title": "Telegram-Style Menu",
-    "description": "Мини-проект с меню в стиле Telegram: три точки, всплывающие подсказки и анимация.",
+    "description": "Мини-проект с меню в стиле Telegram...",
     "preview": "images/telegram-menu.png",
     "demo": "https://hoadf.github.io/telegram-style-menu/",
     "code": "https://github.com/hoadf/telegram-style-menu",
-    "colors": ["#0088cc", "#2c3e50"]
+    "colors": ["#0088cc", "#2c3e50"],
+    "backgroundImage": "url('images/bg-telegram.jpg')"
   },
   {
     "title": "Photographer Portfolio Demo",
-    "description": "Адаптивный одностраничный сайт-портфолио для фотографа с навигацией и галереей.",
+    "description": "Адаптивный сайт-портфолио для фотографа...",
     "preview": "images/photographer-portfolio.png",
     "demo": "https://hoadf.github.io/photographer-portfolio-demo/",
     "code": "https://github.com/hoadf/photographer-portfolio-demo",
-    "colors": ["#1a2a6c", "#2c3e50"]
+    "colors": ["#1a2a6c", "#2c3e50"],
+    "backgroundImage": "url('images/bg-photo.jpg')"
   },
   {
     "title": "Landing Page for Bonus Program",
-    "description": "Лендинг для бонусной программы: преимущества, кэшбэк и CTA-кнопки.",
+    "description": "Лендинг для бонусной программы...",
     "preview": "images/bonus-program.png",
     "demo": "https://hoadf.github.io/Landing-page-for-the-bonus-program/",
     "code": "https://github.com/hoadf/Landing-page-for-the-bonus-program",
-    "colors": ["#00ffae", "#12161c"]
+    "colors": ["#e67e22", "#2c3e50"],
+    "backgroundImage": "url('images/bg-bonus.jpg')"
   }
 ]
