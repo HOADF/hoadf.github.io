@@ -1,67 +1,80 @@
+/* Общие стили */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #222;
-  background: #fafafa;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.header {
-  background: #1a73e8;
   color: #fff;
+  scroll-behavior: smooth;
+}
+
+header {
   text-align: center;
   padding: 40px 20px;
+  background: #111;
 }
 
-h1, h2, h3 {
-  margin: 0 0 15px;
+header h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
-.about {
-  margin: 40px 0;
+header p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
-.projects .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 15px;
+section.project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  transition: transform 0.2s;
+  padding: 40px 20px;
+  transition: background 0.5s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.project img {
+  max-width: 400px;
+  width: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.card img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 10px;
+.project img:hover {
+  transform: scale(1.05);
 }
 
-.card a {
+.project h2 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.project p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
+}
+
+.project a {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
   text-decoration: none;
-  color: #1a73e8;
-  font-weight: bold;
-  margin: 0 5px;
+  transition: background 0.3s;
 }
 
-.footer {
+.project a:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+footer {
   text-align: center;
   padding: 20px;
-  background: #f1f1f1;
-  margin-top: 40px;
+  background: #111;
+  font-size: 0.9rem;
 }
