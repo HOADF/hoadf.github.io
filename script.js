@@ -8,13 +8,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     const projects = await response.json();
 
     projects.forEach(proj => {
-      const card = document.createElement("section");
-      card.className = "project-card";
-      card.style.background = proj.backgroundImage 
-        ? `${proj.backgroundImage}, linear-gradient(135deg, ${proj.colors[0]}, ${proj.colors[1]})`
-        : `linear-gradient(135deg, ${proj.colors[0]}, ${proj.colors[1]})`;
+      const section = document.createElement("section");
+      section.className = "project";
 
-      card.innerHTML = `
+      // поддержка фона
+      if (proj.background) {
+        section.style.backgroundImage = `url(${proj.background})`;
+      }
+
+      section.innerHTML = `
         <img src="${proj.preview}" alt="${proj.title} превью">
         <h2>${proj.title}</h2>
         <p>${proj.description}</p>
@@ -23,7 +25,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           <a href="${proj.code}" target="_blank">Исходный код</a>
         </div>
       `;
-      container.appendChild(card);
+
+      container.appendChild(section);
     });
   } catch (err) {
     console.error("Ошибка загрузки projects.json:", err);
