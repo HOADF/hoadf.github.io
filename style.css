@@ -86,127 +86,117 @@ header p {
   font-size: 1rem;
 }
 
-/* === Контейнер карточек (демо-проектов) === */
+/* === Контейнер карточек === */
 #portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* <-- Центрирование всех рядов */
-  gap: 30px; /* расстояние между карточками */
-  padding: 50px 5%;
-  max-width: 1400px; /* чтобы ряды не расползались слишком широко */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  padding: 60px 5%;
+  max-width: 1200px;
   margin: 0 auto;
 }
-
 /* === Каждая карточка проекта === */
 .project {
-  flex: 1 1 320px; /* ширина карточки: минимум 320px, но может растягиваться */
-  max-width: 380px; /* ограничиваем ширину, чтобы ряд был ровный */
+  position: relative;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 14px;
   overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
+  padding-bottom: 25px; /* Отступ от кнопок до края */
 }
 
-/* === Эффект при наведении === */
 .project:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* === Адаптивность === */
-@media (max-width: 1024px) {
-  #portfolio {
-    gap: 25px;
-  }
-  .project {
-    flex: 1 1 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  #portfolio {
-    flex-direction: column;
-    align-items: center;
-  }
-  .project {
-    width: 90%;
-    max-width: 400px;
-  }
-}
-
-.project * {
-  position: relative;
-  z-index: 1;
-}
-
-
-/* === Изображение === */
+/* === Фон картинки + затемнение === */
 .project img {
   width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid rgba(0,0,0,0.1);
 }
 
-/* === Заголовок и описание === */
+.project::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 14px;
+}
+
+.project:hover::after {
+  opacity: 1;
+}
+
+/* === Контент === */
 .project h2 {
-  margin: 10px 0 8px;
-  font-size: 1.3rem;
+  margin: 20px 10px 10px;
+  font-size: 1.4rem;
   color: #111;
 }
 
 .project p {
   color: #333;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  padding: 0 20px;
   margin-bottom: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* === Кнопки === */
 .project .buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
+  margin-bottom: 10px; /* дополнительный отступ снизу */
 }
 
 .project a {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 25px;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  background: #666; /* по умолчанию */
+  background: #666;
   transition: all 0.3s ease;
 }
 
 .project a:hover {
-  opacity: 0.9;
   transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-/* === Подвал === */
-footer {
-  text-align: center;
-  background: rgba(255,255,255,0.85);
-  padding: 20px;
-  color: #333;
-  font-size: 0.9rem;
-  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
-}
-
-/* === Мобильная адаптация === */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.6rem;
+/* === Адаптивность === */
+@media (max-width: 1024px) {
+  #portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .project {
-    padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  #portfolio {
+    grid-template-columns: 1fr;
+  }
+  .project img {
+    height: 200px;
   }
 }
