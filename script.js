@@ -23,6 +23,24 @@ document.addEventListener("DOMContentLoaded", async () => {
       } else if (proj.colors && proj.colors.length > 1) {
         section.style.background = `linear-gradient(135deg, ${proj.colors[0]}, ${proj.colors[1]})`;
       }
+      const themes = ["light", "dark", "creamy"];
+let currentThemeIndex = 0;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.body.classList.add(savedTheme);
+  currentThemeIndex = themes.indexOf(savedTheme);
+
+  const toggle = document.getElementById("theme-toggle");
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      document.body.classList.remove(...themes);
+      currentThemeIndex = (currentThemeIndex + 1) % themes.length;
+      const newTheme = themes[currentThemeIndex];
+      document.body.classList.add(newTheme);
+      localStorage.setItem("theme", newTheme);
+      toggle.textContent = newTheme === "light" ? "🌤 Светлая" :
+                           newTheme === "dark" ? "🌙 Тёмная" : "🕯 Кремовая";
 
       section.innerHTML = `
         <img src="${proj.preview}" alt="${proj.title} превью">
