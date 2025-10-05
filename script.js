@@ -76,6 +76,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         newTheme === "dark" ? "🌙 Тёмная" : "🕯 Кремовая";
 
       console.log("Тема переключена на:", newTheme);
-    });
-  }
-});
+     });  
+   }
+ }); 
