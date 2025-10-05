@@ -2,10 +2,12 @@
 body {
   margin: 0;
   font-family: "Geologica", sans-serif;
-  background: radial-gradient(circle at center, #f4f6fa 0%, #e3e7ec 50%, #cfd4da 100%);
+  background: radial-gradient(circle at center, #f3f6fa 0%, #e0e4e9 40%, #c5c9ce 100%);
   color: #111;
   transition: background 0.3s ease;
+  background-attachment: fixed; /* красивый плавный эффект при скролле */
 }
+
 
 /* === Шапка === */
 header {
