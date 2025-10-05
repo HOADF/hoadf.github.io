@@ -9,6 +9,13 @@ body {
   min-height: 100vh;
   position: relative;
 }
+  /* чтобы тема могла перекрывать основной фон */
+body.light,
+body.dark,
+body.creamy {
+  background: none;
+
+}
 
 /* лёгкое затемнение по краям, чтобы добавить глубины */
 body::after {
