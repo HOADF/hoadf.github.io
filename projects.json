@@ -26,15 +26,6 @@
     "colors": ["#27ae60", "#2c3e50"],
     "background": "linear-gradient(135deg, #e0fff3, #b8e6d1)"
   },
-    {
-    "title": "Landing Page for Bonus Program",
-    "description": "Лендинг для бонусной программы...",
-    "preview": "images/bonus-program.png",
-    "demo": "https://hoadf.github.io/Landing-page-for-the-bonus-program/",
-    "code": "https://github.com/hoadf/Landing-page-for-the-bonus-program",
-    "colors": ["#e67e22", "#2c3e50"],
-    "background": "https://images.unsplash.com/photo-1604948501466-5c8d4d8b0e3e?auto=format&fit=crop&w=1000&q=70"
-  },
   {
     "title": "DemoRent — Аренда спецтехники",
     "description": "Демонстрационный сайт компании по аренде спецтехники. Содержит слайдер, адаптивную сетку и анимацию появления блоков.",
