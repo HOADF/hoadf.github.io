@@ -45,6 +45,8 @@ header p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* важно для телефонов */
   color: #fff;
   overflow: hidden;
 }
@@ -54,7 +56,7 @@ header p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.55);
   z-index: 0;
 }
 
@@ -118,4 +120,12 @@ footer {
   padding: 20px;
   color: #777;
   font-size: 0.9rem;
+}
+
+/* === Адаптив === */
+@media (max-width: 768px) {
+  .project {
+    background-position: top center;
+    background-size: cover;
+  }
 }
