@@ -2,26 +2,28 @@
 body {
   margin: 0;
   font-family: "Geologica", sans-serif;
-  background: linear-gradient(180deg, #0f1114 0%, #1a1d20 100%);
-  color: #fff;
+  background: linear-gradient(180deg, #e8ebf0 0%, #cfd4da 100%);
+  color: #111;
+  transition: background 0.3s ease;
 }
 
 /* === Шапка === */
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #0f0f0f;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  background: #ffffffcc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
 }
 
 header h1 {
   margin: 0;
   font-size: 2rem;
-  color: #fff;
+  color: #111;
 }
 
 header p {
-  color: #aaa;
+  color: #444;
   margin-top: 8px;
   font-size: 1rem;
 }
@@ -38,16 +40,15 @@ header p {
 /* === Карточка проекта === */
 .project {
   position: relative;
-  border-radius: 14px;
+  border-radius: 12px;
   padding: 25px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll; /* важно для телефонов */
-  color: #fff;
+  background-color: #fff;
+  color: #111;
   overflow: hidden;
 }
 
@@ -56,7 +57,7 @@ header p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(255, 255, 255, 0.6);
   z-index: 0;
 }
 
@@ -67,7 +68,7 @@ header p {
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .project img {
@@ -79,12 +80,12 @@ header p {
 
 .project h2 {
   margin: 10px 0 8px;
-  font-size: 1.4rem;
-  color: #fff;
+  font-size: 1.3rem;
+  color: #111;
 }
 
 .project p {
-  color: #ddd;
+  color: #333;
   font-size: 0.95rem;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -105,27 +106,31 @@ header p {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  background: rgba(255,255,255,0.15);
+  background: linear-gradient(90deg, #3498db, #2ecc71);
   transition: all 0.3s ease;
 }
 
 .project a:hover {
-  background: rgba(255,255,255,0.3);
+  background: linear-gradient(90deg, #2ecc71, #3498db);
+  transform: translateY(-2px);
 }
 
 /* === Подвал === */
 footer {
   text-align: center;
-  background: #0f0f0f;
+  background: #ffffffcc;
   padding: 20px;
-  color: #777;
+  color: #333;
   font-size: 0.9rem;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
 }
 
-/* === Адаптив === */
-@media (max-width: 768px) {
+/* === Мобильная оптимизация === */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
   .project {
-    background-position: top center;
-    background-size: cover;
+    padding: 20px;
   }
 }
