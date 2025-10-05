@@ -15,7 +15,7 @@
     "demo": "https://hoadf.github.io/photographer-portfolio-demo/",
     "code": "https://github.com/hoadf/photographer-portfolio-demo",
     "colors": ["#1a2a6c", "#2c3e50"],
-    "backgroundImage": "url('images/bg-photo.png')"
+    "backgroundImage": "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
   },
   {
     "title": "Landing Page for Bonus Program",
