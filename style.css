@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Geologica", sans-serif;
-  background: linear-gradient(180deg, #e8ebf0 0%, #cfd4da 100%);
+  background: radial-gradient(circle at center, #f3f5f8 0%, #dde2e7 50%, #c4c9cf 100%);
   color: #111;
   transition: background 0.3s ease;
 }
@@ -11,7 +11,7 @@ body {
 header {
   text-align: center;
   padding: 40px 20px;
-  background: #ffffffcc;
+  background: rgba(255,255,255,0.85);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   backdrop-filter: blur(10px);
 }
@@ -52,7 +52,6 @@ header p {
   overflow: hidden;
 }
 
-/* Затемнение фона */
 .project::before {
   content: "";
   position: absolute;
@@ -71,6 +70,7 @@ header p {
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* === Изображение === */
 .project img {
   width: 100%;
   max-width: 400px;
@@ -78,6 +78,7 @@ header p {
   margin-bottom: 15px;
 }
 
+/* === Заголовок и текст === */
 .project h2 {
   margin: 10px 0 8px;
   font-size: 1.3rem;
@@ -99,6 +100,7 @@ header p {
   flex-wrap: wrap;
 }
 
+/* базовый стиль кнопки */
 .project a {
   display: inline-block;
   padding: 10px 20px;
@@ -106,19 +108,14 @@ header p {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  background: linear-gradient(90deg, #3498db, #2ecc71);
   transition: all 0.3s ease;
-}
-
-.project a:hover {
-  background: linear-gradient(90deg, #2ecc71, #3498db);
-  transform: translateY(-2px);
+  background: #999; /* будет заменено динамически */
 }
 
 /* === Подвал === */
 footer {
   text-align: center;
-  background: #ffffffcc;
+  background: rgba(255,255,255,0.85);
   padding: 20px;
   color: #333;
   font-size: 0.9rem;
