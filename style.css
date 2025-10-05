@@ -165,3 +165,28 @@ header p {
     height: 220px;
   }
 }
+
+/* === Подвал === */
+footer {
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  padding: 20px;
+  color: #333;
+  font-size: 0.9rem;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+}
+
+/* Эффект при смене темы */
+body.dark footer {
+  background: rgba(30,30,30,0.85);
+  color: #eee;
+  box-shadow: 0 -1px 8px rgba(255,255,255,0.05);
+}
+
+body.creamy footer {
+  background: rgba(255,248,240,0.85);
+  color: #3b2b1a;
+}
