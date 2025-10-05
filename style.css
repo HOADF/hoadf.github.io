@@ -26,6 +26,37 @@ body::after {
   z-index: 0;
 }
 
+/* === Темы страницы === */
+body.light {
+  background: radial-gradient(circle at 50% 40%, #f7f9fb 0%, #e8ebf0 40%, #d1d6db 100%);
+  color: #111;
+}
+
+body.dark {
+  background: radial-gradient(circle at 50% 40%, #1c1e22 0%, #141517 60%, #0e0f10 100%);
+  color: #fff;
+}
+
+body.creamy {
+  background: radial-gradient(circle at 50% 40%, #fff8f0 0%, #f2e7d8 50%, #e0d2bf 100%);
+  color: #2b1c0f;
+}
+
+/* === Кнопка переключения темы === */
+.theme-btn {
+  margin-top: 10px;
+  background: rgba(0,0,0,0.05);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.theme-btn:hover {
+  background: rgba(0,0,0,0.1);
+}
+
 
 /* === Шапка === */
 header {
