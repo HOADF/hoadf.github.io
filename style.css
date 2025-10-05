@@ -139,16 +139,6 @@ header p {
   }
 }
 
-
-/* лёгкое затемнение фона карточки */
-.project::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.65);
-  z-index: 0;
-}
-
 .project * {
   position: relative;
   z-index: 1;
