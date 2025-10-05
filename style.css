@@ -103,9 +103,7 @@ header p {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
   text-align: center;
   padding-bottom: 25px;
 }
@@ -117,8 +115,7 @@ header p {
 
 /* === Картинка === */
 .project img {
-  width: 100%;
-  
+  width: 100%;  
   object-fit: cover;
   border-bottom: 3px solid rgba(0,0,0,0.1);
 }
@@ -158,9 +155,9 @@ header p {
   transition: all 0.3s ease;
 }
 
-.project a:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 /* === Адаптивность === */
@@ -173,4 +170,3 @@ header p {
     height: 220px;
   }
 }
-
