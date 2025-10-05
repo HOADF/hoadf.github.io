@@ -4,7 +4,6 @@ body {
   font-family: "Geologica", sans-serif;
   background: linear-gradient(180deg, #0f1114 0%, #1a1d20 100%);
   color: #fff;
-  overflow-x: hidden;
 }
 
 /* === Шапка === */
@@ -12,14 +11,13 @@ header {
   text-align: center;
   padding: 40px 20px;
   background: #0f0f0f;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 header h1 {
   margin: 0;
   font-size: 2rem;
   color: #fff;
-  font-weight: 700;
 }
 
 header p {
@@ -33,13 +31,13 @@ header p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
-  padding: 60px 5%;
+  padding: 50px 5%;
   justify-content: center;
 }
 
 /* === Карточка проекта === */
 .project {
-  background: #222;
+  position: relative;
   border-radius: 14px;
   padding: 25px;
   text-align: center;
@@ -48,18 +46,16 @@ header p {
   background-size: cover;
   background-position: center;
   color: #fff;
-  position: relative;
   overflow: hidden;
 }
 
-/* затемнение при фоновом изображении */
+/* Затемнение фона */
 .project::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
-  border-radius: 14px;
 }
 
 .project * {
@@ -69,7 +65,7 @@ header p {
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .project img {
@@ -77,14 +73,12 @@ header p {
   max-width: 400px;
   border-radius: 8px;
   margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .project h2 {
   margin: 10px 0 8px;
   font-size: 1.4rem;
   color: #fff;
-  font-weight: 600;
 }
 
 .project p {
@@ -92,9 +86,6 @@ header p {
   font-size: 0.95rem;
   margin-bottom: 20px;
   line-height: 1.5;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* === Кнопки === */
@@ -124,43 +115,7 @@ header p {
 footer {
   text-align: center;
   background: #0f0f0f;
-  padding: 25px;
+  padding: 20px;
   color: #777;
   font-size: 0.9rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
-}
-
-/* === Адаптив === */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  #portfolio {
-    padding: 40px 4%;
-    gap: 20px;
-  }
-
-  .project {
-    padding: 20px;
-  }
-
-  .project h2 {
-    font-size: 1.2rem;
-  }
-
-  .project p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .project img {
-    max-width: 100%;
-  }
-
-  .project a {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
 }
