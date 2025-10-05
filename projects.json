@@ -5,7 +5,7 @@
     "preview": "images/telegram-menu.png",
     "demo": "https://hoadf.github.io/telegram-style-menu/",
     "code": "https://github.com/hoadf/telegram-style-menu",
-    "colors": ["#0088cc", "#2c3e50"],
+    "colors": ["#0088cc", "#005f99"],
     "background": "images/bg-telegram.jpg"
   },
   {
@@ -23,7 +23,7 @@
     "preview": "images/bonus-program.png",
     "demo": "https://hoadf.github.io/Landing-page-for-the-bonus-program/",
     "code": "https://github.com/hoadf/Landing-page-for-the-bonus-program",
-    "colors": ["#e67e22", "#2c3e50"],
+    "colors": ["#16a085", "#2ecc71"],
     "background": "https://images.unsplash.com/photo-1604948501466-5c8d4d8b0e3e?auto=format&fit=crop&w=1000&q=70"
   }
 ]
