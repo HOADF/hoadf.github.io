@@ -6,7 +6,7 @@
     "demo": "https://hoadf.github.io/telegram-style-menu/",
     "code": "https://github.com/hoadf/telegram-style-menu",
     "colors": ["#0088cc", "#2c3e50"],
-    "backgroundImage": "url('images/bg-telegram.jpg')"
+    "background": "images/bg-telegram.jpg"
   },
   {
     "title": "Photographer Portfolio Demo",
@@ -15,7 +15,7 @@
     "demo": "https://hoadf.github.io/photographer-portfolio-demo/",
     "code": "https://github.com/hoadf/photographer-portfolio-demo",
     "colors": ["#1a2a6c", "#2c3e50"],
-    "backgroundImage": "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+    "background": "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1000&q=70"
   },
   {
     "title": "Landing Page for Bonus Program",
@@ -24,6 +24,6 @@
     "demo": "https://hoadf.github.io/Landing-page-for-the-bonus-program/",
     "code": "https://github.com/hoadf/Landing-page-for-the-bonus-program",
     "colors": ["#e67e22", "#2c3e50"],
-    "backgroundImage": "url('images/bg-bonus.jpg')"
+    "background": "https://images.unsplash.com/photo-1604948501466-5c8d4d8b0e3e?auto=format&fit=crop&w=1000&q=70"
   }
 ]
