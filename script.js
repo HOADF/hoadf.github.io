@@ -11,11 +11,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       const section = document.createElement("section");
       section.className = "project";
 
-      // Универсальное подключение фона
+      // Устанавливаем фоновое изображение, если есть
       if (proj.background) {
         section.style.backgroundImage = `url(${proj.background})`;
       }
 
+      // Основные элементы карточки
       section.innerHTML = `
         <img src="${proj.preview}" alt="${proj.title} превью">
         <h2>${proj.title}</h2>
@@ -26,8 +27,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         </div>
       `;
 
+      // Кастомные цвета для кнопок
+      const buttons = section.querySelectorAll(".buttons a");
+      if (proj.colors && proj.colors.length >= 2) {
+        buttons.forEach(btn => {
+          btn.style.background = `linear-gradient(90deg, ${proj.colors[0]}, ${proj.colors[1]})`;
+        });
+      }
+
       container.appendChild(section);
     });
+
   } catch (err) {
     console.error("Ошибка загрузки projects.json:", err);
   }
