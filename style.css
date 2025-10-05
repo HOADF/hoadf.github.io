@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Geologica", sans-serif;
-  background: radial-gradient(circle at center, #f3f5f8 0%, #dde2e7 50%, #c4c9cf 100%);
+  background: radial-gradient(circle at center, #f4f6fa 0%, #e3e7ec 50%, #cfd4da 100%);
   color: #111;
   transition: background 0.3s ease;
 }
@@ -12,7 +12,7 @@ header {
   text-align: center;
   padding: 40px 20px;
   background: rgba(255,255,255,0.85);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
   backdrop-filter: blur(10px);
 }
 
@@ -23,7 +23,7 @@ header h1 {
 }
 
 header p {
-  color: #444;
+  color: #555;
   margin-top: 8px;
   font-size: 1rem;
 }
@@ -43,20 +43,21 @@ header p {
   border-radius: 12px;
   padding: 25px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
   background-size: cover;
   background-position: center;
-  background-color: #fff;
   color: #111;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
 
+/* лёгкое затемнение фона карточки */
 .project::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255,255,255,0.65);
   z-index: 0;
 }
 
@@ -67,7 +68,7 @@ header p {
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* === Изображение === */
@@ -78,7 +79,7 @@ header p {
   margin-bottom: 15px;
 }
 
-/* === Заголовок и текст === */
+/* === Заголовок и описание === */
 .project h2 {
   margin: 10px 0 8px;
   font-size: 1.3rem;
@@ -100,7 +101,6 @@ header p {
   flex-wrap: wrap;
 }
 
-/* базовый стиль кнопки */
 .project a {
   display: inline-block;
   padding: 10px 20px;
@@ -108,8 +108,13 @@ header p {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+  background: #666; /* по умолчанию */
   transition: all 0.3s ease;
-  background: #999; /* будет заменено динамически */
+}
+
+.project a:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 /* === Подвал === */
@@ -122,7 +127,7 @@ footer {
   box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
 }
 
-/* === Мобильная оптимизация === */
+/* === Мобильная адаптация === */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.6rem;
