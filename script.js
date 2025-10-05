@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const section = document.createElement("section");
       section.className = "project";
 
-      // поддержка фона
+      // Универсальное подключение фона
       if (proj.background) {
         section.style.backgroundImage = `url(${proj.background})`;
       }
