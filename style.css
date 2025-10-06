@@ -143,19 +143,31 @@ header p {
   transform: scale(1.03);
 }
 
-/* === Заголовок и описание === */
-.project h2 {
-  margin: 20px 10px 10px;
-  font-size: 1.5rem;
-  color: #111;
+/* === ✅ Текст поверх фонового изображения === */
+.project h2,
+.project p {
+  color: #fff; /* делаем белым для контраста */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5); /* мягкая тень для читаемости */
 }
 
+/* можно задать другой шрифт именно для заголовков */
+.project h2 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+}
+
+/* описание чуть светлее */
 .project p {
-  color: #333;
-  font-size: 1.05rem;
-  padding: 0 25px;
-  margin-bottom: 20px;
-  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* если нужно центрировать текст над фоном */
+.project h2, 
+.project p {
+  text-align: center;
 }
 
 /* === Кнопки === */
