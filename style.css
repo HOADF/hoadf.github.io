@@ -114,7 +114,13 @@ header p {
   object-fit: cover;
   filter: brightness(0.8) blur(1px); /* затемнение + лёгкое размытие */
   border-bottom: 3px solid rgba(0,0,0,0.1);
+   transition: filter 0.3s ease;
 }
+
+.project:hover img {
+  filter: brightness(0.6) blur(2px);
+}
+
 
 /* === Заголовок и описание === */
 .project h2 {
