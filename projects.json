@@ -37,7 +37,7 @@
   },
   {
     "title": "DemoFinance",
-    "description": "Демо сайт бухгалтерских и юридических услуг. Современный корпоративный лендинг с формами обратной связи, анимацией и адаптивной вёрсткой.",
+    "description": "Демо сайт бухгалтерских и юридических услуг.",
     "preview": "images/preview-finance.png",
     "demo": "https://hoadf.github.io/DemoFinance/",
     "code": "https://github.com/hoadf/DemoFinance",
