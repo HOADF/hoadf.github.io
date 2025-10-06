@@ -112,6 +112,7 @@ header p {
 .project img {
   width: 100%;  
   object-fit: cover;
+  filter: brightness(0.8) blur(1px); /* затемнение + лёгкое размытие */
   border-bottom: 3px solid rgba(0,0,0,0.1);
 }
 
