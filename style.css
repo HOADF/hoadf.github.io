@@ -1,5 +1,4 @@
 /* === Общие стили === */
-/* === Общий фон страницы с мягким переходом от центра к краям === */
 body {
   margin: 0;
   font-family: "Geologica", sans-serif;
@@ -9,12 +8,12 @@ body {
   min-height: 100vh;
   position: relative;
 }
-  /* чтобы тема могла перекрывать основной фон */
+
+/* чтобы тема могла перекрывать основной фон */
 body.light,
 body.dark,
 body.creamy {
   background: none;
-
 }
 
 /* лёгкое затемнение по краям, чтобы добавить глубины */
@@ -33,7 +32,7 @@ body::after {
   z-index: 0;
 }
 
-/* === Темы страницы === */
+/* === Темы === */
 body.light {
   background: radial-gradient(circle at 50% 40%, #f7f9fb 0%, #e8ebf0 40%, #d1d6db 100%);
   color: #111;
@@ -64,7 +63,6 @@ body.creamy {
   background: rgba(0,0,0,0.1);
 }
 
-
 /* === Шапка === */
 header {
   text-align: center;
@@ -89,8 +87,8 @@ header p {
 /* === Контейнер карточек === */
 #portfolio {
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr)); /* две карточки в ряд */
-  justify-content: center; /* центрируем неполные ряды */
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  justify-content: center;
   gap: 50px;
   padding: 60px 5%;
   max-width: 1100px;
@@ -99,28 +97,51 @@ header p {
 
 /* === Карточка проекта === */
 .project {
-  background: #fff;
-  border-radius: 16px;
+  position: relative;
   overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;  
   text-align: center;
   padding-bottom: 25px;
 }
 
-/* === Картинка === */
+/* === Фоновая картинка из JSON === */
+.project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--background, none);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.65) blur(1.5px);
+  z-index: 0;
+  transition: filter 0.4s ease;
+}
+
+/* Эффект при наведении — фон чуть темнее */
+.project:hover::before {
+  filter: brightness(0.55) blur(2.5px);
+}
+
+/* === Контент карточки (поверх фона) === */
+.project * {
+  position: relative;
+  z-index: 1;
+}
+
+/* === Превью === */
 .project img {
-  width: 100%;  
+  width: 100%;
   object-fit: cover;
-  filter: brightness(0.8) blur(1px); /* затемнение + лёгкое размытие */
   border-bottom: 3px solid rgba(0,0,0,0.1);
-   transition: filter 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .project:hover img {
-  filter: brightness(0.6) blur(2px);
+  transform: scale(1.02);
 }
-
 
 /* === Заголовок и описание === */
 .project h2 {
@@ -158,14 +179,14 @@ header p {
 }
 
 .project:hover {
-  transform: scale(1.10);
+  transform: scale(1.07);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 /* === Адаптивность === */
 @media (max-width: 900px) {
   #portfolio {
-    grid-template-columns: 1fr; /* одна карточка в ряд на мобильных */
+    grid-template-columns: 1fr;
     gap: 40px;
   }
   .project img {
