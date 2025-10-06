@@ -13,19 +13,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       const section = document.createElement("section");
       section.className = "project";
 
-      // === Фон карточки ===
+      // === Передаём фон через CSS-переменную (для ::before) ===
       if (proj.background) {
-        // если ссылка на картинку
         if (proj.background.startsWith("http") || proj.background.startsWith("images/")) {
-          section.style.backgroundImage = `url(${proj.background})`;
-          section.style.backgroundSize = "cover";
-          section.style.backgroundPosition = "center";
+          section.style.setProperty("--background", `url(${proj.background})`);
         } else {
-          // если просто цвет
-          section.style.background = proj.background;
+          section.style.setProperty("--background", proj.background);
         }
       } else if (proj.colors && proj.colors.length > 1) {
-        section.style.background = `linear-gradient(135deg, ${proj.colors[0]}, ${proj.colors[1]})`;
+        section.style.setProperty(
+          "--background",
+          `linear-gradient(135deg, ${proj.colors[0]}, ${proj.colors[1]})`
+        );
       }
 
       // === Контент карточки ===
@@ -76,6 +75,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         newTheme === "dark" ? "🌙 Тёмная" : "🕯 Кремовая";
 
       console.log("Тема переключена на:", newTheme);
-     });  
-   }
- }); 
+    });
+  }
+});
