@@ -140,7 +140,7 @@ header p {
 }
 
 .project:hover img {
-  transform: scale(1.02);
+  transform: scale(1.10);
 }
 
 /* === Заголовок и описание === */
