@@ -48,8 +48,8 @@
   "title": "GetClean",
   "description": "Демо сайт клининговой компании с современным дизайном, эффектами пузырей и чистой светлой палитрой.",
   "preview": "images/preview-clean.png",
-  "demo": "https://hoadf.github.io/GetClean/",
-  "code": "https://github.com/hoadf/GetClean",
+  "demo": "https://hoadf.github.io/Get_Fresh/",
+  "code": "https://github.com/hoadf/Get_Fresh",
   "colors": ["#2E86AB", "#A8DADC", "#F39237"],
   "background": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80"
 }
