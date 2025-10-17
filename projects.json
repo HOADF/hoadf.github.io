@@ -12,8 +12,7 @@
   "tags": ["игры", "вёрстка", "сообщество", "информационный сайт", "LegionV", "Infinite Lagrange"],
   "status": "В разработке",
   "author": "HOADF"
-}
-
+},
   
   {
     "title": "Telegram-Style Menu",
@@ -24,6 +23,7 @@
     "colors": ["#0088cc", "#2c3e50"],
     "background": "linear-gradient(135deg, #d8f1ff, #a6cfff)"
   },
+  
   {
     "title": "Photographer Portfolio Demo",
     "description": "Адаптивный сайт-портфолио для фотографа...",
