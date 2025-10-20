@@ -6,7 +6,7 @@
   "demo": "https://hoadf.github.io/LegionV/",
   "code": "https://github.com/hoadf/LegionV",
   "colors": ["#00ffc3", "#0c1626", "#0a1420"],
-  "background": "https://cdn.pixabay.com/photo/2017/02/13/14/07/space-2068736_1280.jpg",
+  "background": "images/background-LegionV.jpg",
   "type": "Информационный сайт сообщества",
   "technologies": ["HTML5", "CSS3"],
   "tags": ["игры", "вёрстка", "сообщество", "информационный сайт", "LegionV", "Infinite Lagrange"],
