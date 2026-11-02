@@ -77,6 +77,15 @@
   "code": "https://github.com/hoadf/demo_ionic",
   "colors": ["#003366", "#ffcc00"],
   "background": "linear-gradient(135deg, #001f3f, #0059b3)"
+},
+  {
+  "title": "Ремонт квартир",
+  "description": "Демо-страница ремонта квартир: обложка, карусель фото работ (Swiper, coverflow), блок контактов.",
+  "preview": "images/preview-repair.png",
+  "demo": "https://hoadf.github.io/demo_repair/",
+  "code": "https://github.com/hoadf/demo_repair",
+  "colors": ["#ff9900", "#1a1a1a"],
+  "background": "linear-gradient(135deg, #1a1a1a, #3a2a10)"
 }
 
 ]
