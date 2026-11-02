@@ -86,6 +86,15 @@
   "code": "https://github.com/hoadf/demo_repair",
   "colors": ["#ff9900", "#1a1a1a"],
   "background": "linear-gradient(135deg, #1a1a1a, #3a2a10)"
+},
+  {
+  "title": "FrostAir — климатические системы",
+  "description": "Демо-сайт продажи кондиционеров: интерактивный виджет температуры, каталог моделей, светлая палитра.",
+  "preview": "images/preview-frostair.png",
+  "demo": "https://hoadf.github.io/FrostAir/",
+  "code": "https://github.com/hoadf/frostair",
+  "colors": ["#2ea8d9", "#1a1a1a"],
+  "background": "linear-gradient(135deg, #eafcff, #bdeeff)"
 }
 
 ]
