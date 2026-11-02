@@ -68,6 +68,15 @@
   "code": "https://github.com/hoadf/Get_Fresh",
   "colors": ["#2E86AB", "#A8DADC", "#F39237"],
   "background": "linear-gradient(135deg, #2E86AB, #A8DADC)"
+},
+  {
+  "title": "Ионные фильтры — B2B лендинг",
+  "description": "Демо сайт оптовых поставок ионных фильтров для очистки воды: каталог моделей, технические характеристики, адаптивное меню.",
+  "preview": "images/preview-ionic.png",
+  "demo": "https://hoadf.github.io/demo_ionic/",
+  "code": "https://github.com/hoadf/demo_ionic",
+  "colors": ["#003366", "#ffcc00"],
+  "background": "linear-gradient(135deg, #001f3f, #0059b3)"
 }
 
 ]
