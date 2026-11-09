@@ -13,17 +13,7 @@
   "status": "В разработке",
   "author": "HOADF"
 },
-  
-  {
-    "title": "Telegram-Style Menu",
-    "description": "Мини-проект с меню в стиле Telegram...",
-    "preview": "images/telegram-menu.png",
-    "demo": "https://hoadf.github.io/telegram-style-menu/",
-    "code": "https://github.com/hoadf/telegram-style-menu",
-    "colors": ["#0088cc", "#2c3e50"],
-    "background": "linear-gradient(135deg, #d8f1ff, #a6cfff)"
-  },
-  
+
   {
     "title": "Photographer Portfolio Demo",
     "description": "Адаптивный сайт-портфолио для фотографа...",
@@ -34,15 +24,6 @@
     "background": "linear-gradient(135deg, #1a2a6c, #2c3e50)"
   },
   {
-    "title": "Landing Page for Bonus Program",
-    "description": "Лендинг для бонусной программы...",
-    "preview": "images/bonus-program.png",
-    "demo": "https://hoadf.github.io/Landing-page-for-the-bonus-program/",
-    "code": "https://github.com/hoadf/Landing-page-for-the-bonus-program",
-    "colors": ["#27ae60", "#2c3e50"],
-    "background": "linear-gradient(135deg, #e0fff3, #b8e6d1)"
-  },
-  {
     "title": "DemoRent — Аренда спецтехники",
     "description": "Демонстрационный сайт компании по аренде спецтехники...",
     "preview": "images/preview-rent.png",
@@ -51,24 +32,6 @@
     "colors": ["#ff9800", "#000000"],
     "background": "images/background-rent.jpg" 
   },
-  {
-    "title": "DemoFinance",
-    "description": "Демо сайт бухгалтерских и юридических услуг.",
-    "preview": "images/preview-finance.png",
-    "demo": "https://hoadf.github.io/DemoFinance/",
-    "code": "https://github.com/hoadf/DemoFinance",
-    "colors": ["#3498db", "#2c3e50", "#f9f9f9"],
-    "background": "linear-gradient(135deg, #3498db, #2c3e50)"
-   },
-  {
-  "title": "GetClean",
-  "description": "Демо сайт клининговой компании с современным дизайном, эффектами пузырей и чистой светлой палитрой.",
-  "preview": "images/preview-clean.png",
-  "demo": "https://hoadf.github.io/Get_Fresh/",
-  "code": "https://github.com/hoadf/Get_Fresh",
-  "colors": ["#2E86AB", "#A8DADC", "#F39237"],
-  "background": "linear-gradient(135deg, #2E86AB, #A8DADC)"
-},
   {
   "title": "Ионные фильтры — B2B лендинг",
   "description": "Демо сайт оптовых поставок ионных фильтров для очистки воды: каталог моделей, технические характеристики, адаптивное меню.",
