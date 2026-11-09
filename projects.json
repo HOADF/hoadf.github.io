@@ -58,15 +58,6 @@
   "code": "https://github.com/hoadf/laptop-in-room",
   "colors": ["#0078d7", "#0d1b33"],
   "background": "linear-gradient(135deg, #1f3a63, #060c19)"
-},
-  {
-  "title": "PC Terminal Trainer",
-  "description": "Интерактивный тренажёр-справочник команд Windows (CMD): вводишь команду — получаешь пример вывода, с автодополнением, историей и подсказками при ошибке.",
-  "preview": "images/preview-terminal.png",
-  "demo": "https://hoadf.github.io/pc-terminal-trainer/",
-  "code": "https://github.com/hoadf/pc-terminal-trainer",
-  "colors": ["#55d667", "#0c0e14"],
-  "background": "linear-gradient(135deg, #12151c, #0a0a0a)"
 }
 
 ]
